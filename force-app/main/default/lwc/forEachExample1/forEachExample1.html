@@ -1,0 +1,18 @@
+<template>   
+    <lightning-card title="ForEachExample" icon-name="custom:custom50"> 
+        <h3> To display the Array Values in For Each  </h3>  <br/>
+       <template for:each={fruitList} for:item="fruit">
+            <p key={fruit}>
+                {fruit}
+            </p>
+        </template>
+        
+        <h3> To display the JSON format Values in For Each  </h3>  <br/>
+        <template for:each={contacts} for:item="contact">
+            <li key={contact.Id}>
+                {contact.Name}, {contact.Title}
+            </li>
+        </template>
+       
+    </lightning-card>
+</template>

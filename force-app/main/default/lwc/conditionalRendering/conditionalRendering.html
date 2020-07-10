@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="Conditional Rendering" icon-name='custom:custome28'>
+        <lightning-button name="Show" label='Click Me to Show' onclick={clickMeToShow}></lightning-button>
+        <lightning-button name="hide" label='Click Me to Hide' onclick={clickMeToHide}></lightning-button>
+        <template if:true={showMe}>
+          <p>  I am Clicked </p>
+        </template>
+        <template if:true={hideMe}>
+            <p>  I am un Clicked </p>
+          </template>
+        
+    </lightning-card>
+</template>

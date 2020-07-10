@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title='Two Way Data Binding' icon-name='custom:custom30'>
+        <lightning-input label='Enter Your FirstName' name='firstname' onchange={getNameHandler}></lightning-input>
+        <lightning-input label='Enter Your LastName'  name='lastname'  onchange={getNameHandler}></lightning-input>
+        FirstName : {firstname}
+        LastName  : {lastname}
+        
+    </lightning-card>
+    
+</template>
+

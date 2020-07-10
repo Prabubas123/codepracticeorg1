@@ -1,0 +1,16 @@
+<template>    
+    <template if:true={booleanBtn}>
+        <lightning-button name='Cancel' label="Cancel" onclick={handleCancel}></lightning-button>
+        <lightning-card title='Button Hide and Show' icon-name='custom:custom80'>           
+            <lightning-input name="Enter the FirstName" placeholder='Enter Your FirstName'></lightning-input>
+            <lightning-input name="Enter the LastName" placeholder='Enter Your LastName'></lightning-input>
+            <lightning-input name="Enter the Email" placeholder='Enter Your Email Id'></lightning-input>
+            <lightning-input name="Enter the Phone" placeholder='Enter Your Phone'></lightning-input>
+        </lightning-card>
+    </template>
+
+    <template if:false={booleanBtn}>
+        <lightning-button name='Show' label="Show Form" onclick={handleSave}></lightning-button>            
+    </template>
+
+</template>
