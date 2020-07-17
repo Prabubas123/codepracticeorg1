@@ -2,7 +2,7 @@ public class FetchAccountRecords {
 
     @AuraEnabled(cacheable=true)
     public static List<Account> getAccounts(){
-        List<Account> lstAcc = [select id,name from Account limit 10];
+        List<Account> lstAcc = [select Id,Name,AccountNumber,Phone from Account limit 10];
         return lstAcc;
     }
    

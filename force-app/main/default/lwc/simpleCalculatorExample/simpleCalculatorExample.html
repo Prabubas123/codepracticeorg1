@@ -1,0 +1,9 @@
+<template>
+    <lightning-card title="Simple Calculator Example" icon-name="utility:connected_apps">
+        <lightning-input label="Enter First Value" name="fnumber" value={firstnumber} onchange={handleCalculation}></lightning-input>
+        <lightning-input label="Enter Second Value" name="snumber" value={secondnumber} onchange={handleCalculation}></lightning-input>
+        <div slot="footer">
+            <c-result-component-calculator result={result}></c-result-component-calculator>
+        </div>
+    </lightning-card>
+</template>

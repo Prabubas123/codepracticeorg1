@@ -1,0 +1,9 @@
+<template>
+    <lightning-card title="For Iterator Example 2">
+        <template iterator:acc={accounts.data}>
+            <p key={acc.value.Id}>
+                {acc.value.Name} 
+            </p>
+        </template>
+    </lightning-card>
+</template>
