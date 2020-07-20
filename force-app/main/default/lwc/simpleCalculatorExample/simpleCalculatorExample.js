@@ -15,6 +15,7 @@ export default class SimpleCalculatorExample extends LightningElement {
         }
         this.result = parseInt(this.firstnumber) + parseInt(this.secondnumber)
     }
+    
 
     
 }
